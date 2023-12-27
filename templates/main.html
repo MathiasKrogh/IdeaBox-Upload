@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random activity</title>
+    <link rel="stylesheet" type="text/css" href="../static/main.css"> 
+</head>
+
+    <body>
+        <div class="content">
+            <h1>Random activity</h1>
+            <section id="activity" class="activity">
+                {% if name %}
+                <div class="activityInput">
+                    <p>The activity '{{name}}' was uploaded to the database</p>
+                </div>
+                {% endif %}
+            </section>
+            <form class="grid", action="/result" method="POST">
+                <section id="activityInput" class="activityInput">
+                    <label for="type">Enter activity type:</label>
+                    <input type="text" id="type" name="type">
+
+                    <label for="long">Enter the activity's name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="long">Long? 1 for yes and 0 for no:</label>
+                    <input type="text" id="long" name="long">
+
+                    <label for="type">Enter a description for the activity:</label>
+                    <input type="text" id="desc" name="desc">
+
+                    <input class="file_submit" type="Submit">
+                </section>
+            </form>
+        </div>
+    </body>
+</html>
