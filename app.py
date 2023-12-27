@@ -7,14 +7,7 @@ ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 
-firebaseConfig={"apiKey": "AIzaSyC35JQhDJu6JpPUh5UelWToZPa-g3dnlJ4",
-  "authDomain": "idea-box-ef8e8.firebaseapp.com",
-  "databaseURL": "https://idea-box-ef8e8-default-rtdb.europe-west1.firebasedatabase.app/",
-  "projectId": "idea-box-ef8e8",
-  "storageBucket": "idea-box-ef8e8.appspot.com",
-  "messagingSenderId": "186666334977",
-  "appId": "1:186666334977:web:5734a65add2707495d3900",
-  "measurementId": "G-Y4SE07Y0TJ"}
+firebaseConfig={""}
 
 # Use the application default credentials
 firebase=pyrebase.initialize_app(firebaseConfig)
